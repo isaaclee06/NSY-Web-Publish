@@ -1,0 +1,2 @@
+gradient generator: angrytools.com/gradient
+animations: animista.net/play/basic
