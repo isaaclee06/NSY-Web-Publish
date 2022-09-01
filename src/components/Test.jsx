@@ -18,6 +18,12 @@ class Test extends Component {
     componentDidMount = () => {
         //this.testPostAPI();
         //this.testGetAPI();
+        this.testFreeGet();
+    };
+
+    testFreeGet = () => {
+testService.testFreeEndpoint()
+.then(this.onGetFreeSuccess)
     };
 
     testPostAPI = () => {
@@ -35,6 +41,13 @@ class Test extends Component {
             test2: response.data
         });
         //console.log(response.data.ip)
+    };
+
+    onGetFreeSuccess = (response) => {
+        this.setState({
+            test: response.data.fact
+        });
+        console.log(response.data)
     };
 
     onTestSuccess = (response) => {

@@ -5,6 +5,20 @@ import axios from "axios";
 const endpoint = "https://1s6os64m2g.execute-api.us-west-1.amazonaws.com/Prod";
 
 
+
+let testFreeEndpoint = () => {
+    const config = {
+        method: "Get",
+        url: `https://catfact.ninja/fact`,
+        crossdomain: true,
+        withCredentials: true,
+        headers: { "Content-Type": "application/json" },
+    }
+
+    return axios.get(config.url);
+    //return axios(config)
+};
+
 let testEndpoint = () => {
     const config = {
         method: "Get",
@@ -93,5 +107,6 @@ let testPostEndpoint = (payload) => {
 
 export default {
     testEndpoint,
-    testPostEndpoint
+    testPostEndpoint,
+    testFreeEndpoint
 };
