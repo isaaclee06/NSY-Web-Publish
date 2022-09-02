@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import testService from '../services/testService';
 import logo from '../logo.svg';
-import  {Button}  from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 
 
@@ -22,8 +22,8 @@ class Test extends Component {
     };
 
     testFreeGet = () => {
-testService.testFreeEndpoint()
-.then(this.onGetFreeSuccess)
+        testService.testFreeEndpoint()
+            .then(this.onGetFreeSuccess)
     };
 
     testPostAPI = () => {
@@ -76,7 +76,7 @@ testService.testFreeEndpoint()
                     Learn React
                 </a>
                 <div className='ButtontTest'>
-                <Button variant="outline-primary">Primary</Button>
+                    <Button variant="outline-primary">Primary</Button>
                 </div>
                 <div className='test'>
                     <div>
