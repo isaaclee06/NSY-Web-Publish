@@ -21,7 +21,7 @@ export const Gallery = (props) => {
               ))
               : 'Loading...'} */}
 
-            <div onClick={ () => window.location.replace('https://my.newsong.net/registration?registrationinstanceid=386')} className='hoverable'>
+            <div onClick={ () => window.location.href='https://my.newsong.net/registration?registrationinstanceid=386'} className='hoverable'>
               <Image smallImage={props.data? props.data[3].smallImage: ""}  />
             </div>
 
@@ -31,7 +31,7 @@ export const Gallery = (props) => {
             <div className='col-sm-6 col-md-4 col-lg-4'>
               <Image smallImage={props.data? props.data[1].smallImage: ""} />
             </div>
-            <div className='col-sm-6 col-md-4 col-lg-4 hoverable' onClick={ () => window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSdttETYqcRHVshTws3qGgRsxDPNdquW0DR_qPqw5siFT4Qhyw/viewform?usp=sf_link')}>
+            <div className='col-sm-6 col-md-4 col-lg-4 hoverable' onClick={ () => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdttETYqcRHVshTws3qGgRsxDPNdquW0DR_qPqw5siFT4Qhyw/viewform?usp=sf_link'}>
               <Image smallImage={props.data? props.data[2].smallImage: ""} />
             </div>
 

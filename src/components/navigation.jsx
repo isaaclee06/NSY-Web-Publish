@@ -47,17 +47,17 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a className='hoverable' onClick={ () => window.location.replace('https://calendar.google.com/calendar/embed?src=newsongnsy%40gmail.com&ctz=America%2FLos_Angeles')}>
+              <a className='hoverable' onClick={ () => window.location.href='https://calendar.google.com/calendar/embed?src=newsongnsy%40gmail.com&ctz=America%2FLos_Angeles'}>
                 Calendar
               </a>
             </li>
             <li>
-              <a className='hoverable' onClick={ () => window.location.replace('https://linktr.ee/NewsongYouth')}>
+              <a className='hoverable' onClick={ () => window.location.href='https://linktr.ee/NewsongYouth'}>
                 LinkTree
               </a>
             </li>
             <li>
-              <a className='hoverable' onClick={ () => window.location.replace('https://www.instagram.com/newsong_youth/')}>
+              <a className='hoverable' onClick={ () => window.location.href='https://www.instagram.com/newsong_youth/'}>
                 Instagram
               </a>
             </li>
